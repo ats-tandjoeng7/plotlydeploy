@@ -1,4 +1,4 @@
-/* UCB-DATA-ANALYTICS-2022, Parto. T */
+/* UCB-DATA-ANALYTICS-2022, Parto T. */
 
 body {
   color: black;
@@ -7,18 +7,8 @@ body {
   padding: 0;
 }
 
-#ffFan {
-  font-family: 'Fantasy', 'serif';
-  font-weight: 700;
-  color: blue;
-}
-
-hr {
-  border: 2px solid #663399;
-}
-
 nav {
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 nav:hover {
@@ -28,26 +18,27 @@ nav:hover {
 }
 
 div.well:hover {
-  background: aliceblue;
+  background: honeydew;
 }
 
 div#sample-metadata.panel-body {
-  background: aliceblue;
+  background: honeydew;
 }
 
 div.col-md-5:hover {
-  background: aliceblue;
+  background: honeydew;
 }
 
 div.col-md-12:hover {
-  background: aliceblue;
+  background: honeydew;
+}
+
+hr {
+  border: 1px solid #663399;
 }
 
 .jumbotron {
   background-image: url("../images/bubbleplot_id946.jpg");
-/*
-  background-image: url("../images/happy_thanksgiving_2021.jpg");
-*/
   background-size: 33.33% 100%;
   text-align: center;
 }
@@ -55,6 +46,18 @@ div.col-md-12:hover {
 .fs1Rem {
   font-family: 'inherit';
   font-size: 1rem;
+}
+
+#ffFan {
+  font-family: 'Fantasy', 'serif';
+  font-weight: 700;
+  color: indigo;
+}
+
+#footer {
+  font-family: inherit;
+  font-size: 10px;
+  text-align: center;
 }
 
 .animeBb {

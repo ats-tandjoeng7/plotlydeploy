@@ -1,7 +1,7 @@
 // UCB-VIRT-DATA-ANALYTICS-2022, Parto T.
 
 // link to samples.json file 
-var url = 'static/js/samples.json';
+const url = 'static/js/samples.json';
 
 function init() {
 // Grab a reference to the dropdown select element
@@ -73,9 +73,7 @@ function buildCharts(sample) {
     let otuIds = sample0.otu_ids;
     let otuLabels = sample0.otu_labels;
     let sampleVals = sample0.sample_values;
-    let wfreq = result.wfreq;
-    // code to filter null value from wfreq
-    console.log(sample0, result, wfreq);
+    let wFreq = result.wfreq;
 
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
@@ -84,7 +82,7 @@ function buildCharts(sample) {
     var yticks = otuIds.slice(0, topx).map(val => 'OTU ' + val).reverse();
     topxLabels = otuLabels.slice(0, topx).map(val => val).reverse();
     topxVals = sampleVals.slice(0, topx).map(val => val).reverse();
-    console.log(typeof(topxVals), typeof(yticks), typeof(topxLabels));
+//    console.log(typeof(topxVals), typeof(yticks), typeof(topxLabels));
 //    console.log(topxVals, yticks, topxLabels);
 
     // 8. Create the trace for the bar chart. 
@@ -100,8 +98,11 @@ function buildCharts(sample) {
       hovermode: 'closest',
       title: '<b>Top 10 Bacteria Cultures Found</b>'
     };
+    // add mobile-responsive layout
+    var config = { responsive: true };
+    // 6. Use Plotly to plot the gauge data and layout.
     // 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot('bar', barData, barLayout);
+    Plotly.newPlot('bar', barData, barLayout, config);
 
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
@@ -109,24 +110,24 @@ function buildCharts(sample) {
       y: sampleVals,
       text: otuLabels,
       mode: 'markers',
-      marker: {size: sampleVals, color: otuIds, colorscale: 'Earth'}
+      marker: { size: sampleVals, color: otuIds, colorscale: 'Earth' }
     }];
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
       hovermode: 'closest',
       title: '<b>Bacteria Cultures per Sample</b>',
-      xaxis: {title: 'OTU ID'}
+      xaxis: { title: 'OTU ID' }
     };
     // 3. Use Plotly to plot the data with the layout.
-    Plotly.newPlot('bubble', bubbleData, bubbleLayout);
+    Plotly.newPlot('bubble', bubbleData, bubbleLayout, config);
     
     // 4. Create the trace for the gauge chart.
     var gaugeData = [{
       type: 'indicator',
       mode: 'gauge+number',
       title: '<b>Belly Button Washing Frequency</b><br>Scrubs per Week',
-      value: wfreq,
-//      number: { font: {size: 96} },
+      value: wFreq,
+      // number: { font: {size: 96} },
       gauge: {
         axis: { range: [null, 10], tickwidth: 1, tickcolor: "gray" },
         bar: { color: "black" },
@@ -144,9 +145,10 @@ function buildCharts(sample) {
     }];
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 458, height: 450, margin: { l: 25, r: 25, t: 0, b: 0 }
+      // add mobile-responsive layout
+      margin: { l: 25, r: 25, t: 0, b: 0 }
+      // width: 458, height: 450, margin: { l: 25, r: 25, t: 0, b: 0 }
     };
-    // 6. Use Plotly to plot the gauge data and layout.
-    Plotly.newPlot('gauge', gaugeData, gaugeLayout);
+    Plotly.newPlot('gauge', gaugeData, gaugeLayout, config);
   });
 }

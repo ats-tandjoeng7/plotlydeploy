@@ -14,10 +14,11 @@
   <div class="wrapper">
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
       <ul class="nav navbar-nav">
-        <li class="nav-item active"><a class="navbar-brand" href="#" title="Refresh this page" style="font-size: 40px;">&#8962;</a></li>
+        <li class="nav-item active"><a class="navbar-brand" href="#" title="Refresh this page" style="font-size: 32px; font-align: center;">&#8962;</a></li>
         <li class="nav-item"><a class="navbar-brand" href="#bar" title="Jump to Bar Plots">Bar Plots</a></li>
         <li class="nav-item"><a class="navbar-brand" href="#gauge" title="Jump to Gauge Indicator Plots">Gauge Indicator</a></li>
         <li class="nav-item"><a class="navbar-brand" href="#bubble" title="Jump to Bubble Plots">Bubble Plots</a></li>
+        <li class="nav-item"><a class="navbar-brand" href="https://ats-tandjoeng7.github.io/UFOs/" target="_blank" title="Interested in finding UFO sighting spots?">UFO Finder</a></li>
       </ul>
     </nav>
   </div>
@@ -29,7 +30,7 @@
       </div>
       <div class="col-md-12" id="ffFan">
         <hr>
-        <p style="font-size: 20px;">Welcome to a Belly Button Biodiversity visualization dashboard! It includes an interactive panel and visual charts for efficiently exploring demographic information and bacterial data for each of our volunteers. The demographic panel and bar plots provide an easy way to identify the top 10 bacterial species in the sampled belly buttons from hundreds of volunteers.</p>
+        <p style="font-size: 20px;">Welcome to the Belly Button Biodiversity visualization dashboard! It includes an interactive panel and visual charts for efficiently exploring demographic information and bacterial data for each of our volunteers. The demographic panel and bar plots provide an easy way to identify the top 10 bacterial species in the sampled belly buttons from hundreds of volunteers.</p>
         <hr>
       </div>
     </div>
@@ -47,21 +48,28 @@
         </div>
       </div>
       <div class="col-md-5">
+        <div id="aboutBar"></div>
         <div id="bar"></div>
       </div>
       <div class="col-md-5">
+        <div id="aboutGauge"></div>
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
+        <div id="aboutBubble"></div>
         <div id="bubble"></div>
       </div>
     </div>
   </div>
+  <hr>
+  <div class="wrapper" id="footer">
+    <span>&copy; 2022 UCB-VIRT-DATA-ANALYTICS, Parto T.</span>
+  </div>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <!--  <script src="static/js/plots.js"></script> -->
   <script src="static/js/charts.js"></script>
+  <script src="static/js/add_p.js"></script>
 </body>
 </html>

@@ -145,9 +145,8 @@ function buildCharts(sample) {
     }];
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      // add mobile-responsive layout
+    // optimized mobile-responsive layout
       margin: { l: 25, r: 25, t: 0, b: 0 }
-      // width: 458, height: 450, margin: { l: 25, r: 25, t: 0, b: 0 }
     };
     Plotly.newPlot('gauge', gaugeData, gaugeLayout, config);
   });

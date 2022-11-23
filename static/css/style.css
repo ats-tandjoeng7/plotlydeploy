@@ -1,0 +1,76 @@
+/* UCB-DATA-ANALYTICS-2022, Parto. T */
+
+body {
+  color: black;
+  background-color: #fffff7;
+  margin: 0;
+  padding: 0;
+}
+
+#ffFan {
+  font-family: 'Fantasy', 'serif';
+  font-weight: 700;
+  color: blue;
+}
+
+hr {
+  border: 2px solid #663399;
+}
+
+nav {
+  opacity: 0.75;
+}
+
+nav:hover {
+  opacity: 1;
+  font-weight: 700;
+  background: linear-gradient(to right, red, orange, yellow, yellowgreen, green);
+}
+
+div.well:hover {
+  background: aliceblue;
+}
+
+div#sample-metadata.panel-body {
+  background: aliceblue;
+}
+
+div.col-md-5:hover {
+  background: aliceblue;
+}
+
+div.col-md-12:hover {
+  background: aliceblue;
+}
+
+.jumbotron {
+  background-image: url("../images/bubbleplot_id946.jpg");
+/*
+  background-image: url("../images/happy_thanksgiving_2021.jpg");
+*/
+  background-size: 33.33% 100%;
+  text-align: center;
+}
+
+.fs1Rem {
+  font-family: 'inherit';
+  font-size: 1rem;
+}
+
+.animeBb {
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-name: big-bang;
+}
+
+@keyframes big-bang {
+  from {
+    margin-top: 45%;
+    width: 175%;
+  }
+  to {
+    margin-top: 0%;
+    width: 25%;
+  }
+}

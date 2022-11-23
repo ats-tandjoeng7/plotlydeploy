@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="UCB-VIRT-DATA-ANALYTICS Module 13, Parto T.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active"><a class="navbar-brand" href="#" title="Refresh this page" style="font-size: 40px;">&#8962;</a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#bar" title="Jump to Bar Plots">Bar Plots</a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#gauge" title="Jump to Gauge Indicator Plots">Gauge Indicator</a></li>
+        <li class="nav-item"><a class="navbar-brand" href="#bubble" title="Jump to Bubble Plots">Bubble Plots</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron">
+        <h1 id="ffFan">Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+      <div class="col-md-12" id="ffFan">
+        <hr>
+        <p style="font-size: 20px;">Welcome to a Belly Button Biodiversity visualization dashboard! It includes an interactive panel and visual charts for efficiently exploring demographic information and bacterial data for each of our volunteers. The demographic panel and bar plots provide an easy way to identify the top 10 bacterial species in the sampled belly buttons from hundreds of volunteers.</p>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5><b>Test Subject ID No.:</b></h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body" onchange="this.parentNode.style.backgroundColor=this.value"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!--  <script src="static/js/plots.js"></script> -->
+  <script src="static/js/charts.js"></script>
+</body>
+</html>

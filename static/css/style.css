@@ -1,4 +1,4 @@
-/* UCB-DATA-ANALYTICS-2022, Parto T. */
+/* UCB-VIRT-DATA-ANALYTICS-2022, Parto T. */
 
 body {
   color: black;
@@ -37,21 +37,40 @@ hr {
   border: 1px solid #663399;
 }
 
+a[href^="#top"] {
+  font-size: 20px;
+  text-align: center;
+  background: orange;
+}
+
+h1[id^="ffFan"] {
+  font-family: 'Fantasy', 'serif';
+  color: indigo;
+}
+
+[id^="fsFan"] {
+  font-family: 'Fantasy', 'serif';
+  color: indigo;
+  font-size: 18px;
+}
+
 .jumbotron {
   background-image: url("../images/bubbleplot_id946.jpg");
   background-size: 33.33% 100%;
   text-align: center;
 }
 
+.fs20 {
+  font-size: 20px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
 .fs1Rem {
   font-family: inherit;
   font-size: 1rem;
-}
-
-#ffFan {
-  font-family: 'Fantasy', 'serif';
-  font-weight: 700;
-  color: indigo;
 }
 
 #footer {

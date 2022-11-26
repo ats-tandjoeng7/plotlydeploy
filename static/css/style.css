@@ -40,7 +40,7 @@ hr {
 }
 
 a[href^="#top"] {
-  font-size: 2vw;
+  font-size: 2.4vw;
   text-align: center;
   background: #ffa500;
 }
@@ -48,13 +48,13 @@ a[href^="#top"] {
 h1[id^="ffFan"] {
   font-family: 'Fantasy', 'serif';
   color: #4b0082;
-  font-size: 4.8vw;
+  font-size: 5vw;
 }
 
 [id^="fsFan"] {
   font-family: 'Fantasy', 'serif';
   color: #4b0082;
-  font-size: 1.8vw;
+  font-size: 2vw;
 }
 
 .jumbotron {
@@ -67,8 +67,8 @@ h1[id^="ffFan"] {
   font-size: 2vw;
 }
 
-.fs14 {
-  font-size: 1.4vw;
+.fs15 {
+  font-size: 1.5vw;
 }
 
 .fs1Rem {
@@ -78,7 +78,7 @@ h1[id^="ffFan"] {
 
 #footer {
   font-family: inherit;
-  font-size: 1vw;
+  font-size: 10px;
   text-align: center;
 }
 

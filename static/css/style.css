@@ -34,12 +34,13 @@ div.col-md-12:hover {
   background: #f0fff0;
 }
 
+/* font-size: 0.1vw is about 1px */
 hr {
-  border: 1px solid #663399;
+  border: 0.1vw solid #663399;
 }
 
 a[href^="#top"] {
-  font-size: 20px;
+  font-size: 2vw;
   text-align: center;
   background: #ffa500;
 }
@@ -47,26 +48,27 @@ a[href^="#top"] {
 h1[id^="ffFan"] {
   font-family: 'Fantasy', 'serif';
   color: #4b0082;
+  font-size: 4.8vw;
 }
 
 [id^="fsFan"] {
   font-family: 'Fantasy', 'serif';
   color: #4b0082;
-  font-size: 18px;
+  font-size: 1.8vw;
 }
 
 .jumbotron {
   background-image: url("../images/bubbleplot_id946.jpg");
-  background-size: 33.33% 100%;
+  background-size: 33.33% auto;
   text-align: center;
 }
 
 .fs20 {
-  font-size: 20px;
+  font-size: 2vw;
 }
 
-.fs18 {
-  font-size: 18px;
+.fs14 {
+  font-size: 1.4vw;
 }
 
 .fs1Rem {
@@ -76,7 +78,7 @@ h1[id^="ffFan"] {
 
 #footer {
   font-family: inherit;
-  font-size: 10px;
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -103,7 +105,7 @@ select {
   background-color: white;
   display: inline-block;
   border: solid;
-  border-radius: 5px;
+  border-radius: 0.5vw;
   line-height: 1.5em;
   /* padding: top | right | bottom | left */
   padding: 0.2em 3.0em 0.2em 0.3em;

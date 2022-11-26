@@ -2,7 +2,7 @@
 
 // insert a paragraph about each chart
 function addP(txt, divId) {
-  var newP = `<p class="fs15">${txt}</p>`;
+  var newP = `<p class="fs1x">${txt}</p>`;
   var htmlDiv = document.getElementById(divId);
   htmlDiv.innerHTML = newP;
 }

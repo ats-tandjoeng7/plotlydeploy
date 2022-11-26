@@ -34,27 +34,28 @@ div.col-md-12:hover {
   background: #f0fff0;
 }
 
-/* font-size: 0.1vw is about 1px */
+/* font-size: 0.1vw or 0.1vh is about 1px */
 hr {
   border: 0.1vw solid #663399;
 }
 
 a[href^="#top"] {
-  font-size: 2.4vw;
+  font-size: 4vmin;
   text-align: center;
-  background: #ffa500;
+  /* background: #ffa500; */
+  color: #ffa500;
 }
 
 h1[id^="ffFan"] {
   font-family: 'Fantasy', 'serif';
   color: #4b0082;
-  font-size: 5vw;
+  font-size: 5.8vw;
 }
 
 [id^="fsFan"] {
   font-family: 'Fantasy', 'serif';
   color: #4b0082;
-  font-size: 2vw;
+  font-size: 2.4vmin;
 }
 
 .jumbotron {
@@ -63,12 +64,12 @@ h1[id^="ffFan"] {
   text-align: center;
 }
 
-.fs20 {
-  font-size: 2vw;
+.fs2x {
+  font-size: 2.9vmin;
 }
 
-.fs15 {
-  font-size: 1.5vw;
+.fs1x {
+  font-size: 1.6vmin;
 }
 
 .fs1Rem {
@@ -108,7 +109,7 @@ select {
   border-radius: 0.5vw;
   line-height: 1.5em;
   /* padding: top | right | bottom | left */
-  padding: 0.2em 3.0em 0.2em 0.3em;
+  padding: 0.2em 3em 0.2em 0.3em;
   /* support standard & historical browsers Chrome/Safari/Edge/Firefox */
   box-sizing: border-box;
   appearance: none;

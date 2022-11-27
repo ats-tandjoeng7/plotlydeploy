@@ -4,8 +4,11 @@
 body {
   color: black;
   background-color: #fffff7;
-  margin: 0;
-  padding: 0;
+  margin: 10px auto;
+  padding: 0 0 50px 0;
+  display: block;
+  position: relative;
+  overflow-y: scroll;
 }
 
 nav {

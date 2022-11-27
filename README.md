@@ -65,7 +65,7 @@ The refactored source code and screenshots of our webpage can be referred in [in
 - Title attributes were added to display "Belly Button Biodiversity Home" and brief link information when users hover their mouse over each link on the navigation bar. This could be useful when users use the keyboard \<F11\> key to view our webpage in full screen mode.
 - Link to the completed webpage: <a href="https://ats-tandjoeng7.github.io/plotlydeploy/" target="_blank">Belly Button Biodiversity webpage</a>.
 
-Fig. 1 outlined the design and layout of our webpage, which consisted of a horizontal navigation bar at the top followed by a header section with descriptive information about the Belly Button Biodiversity Dashboard, webpage content section including the ID No. Selector, and a simple footer at the bottom of the page.
+Fig. 1 outlined the initial design and layout of our webpage, which consisted of a horizontal navigation bar accompanied with a header section with descriptive information about the Belly Button Biodiversity Dashboard, webpage content section including the ID No. Selector, and a simple footer at the bottom of the page. The navigation bar could be fixed at the top or at the bottom of our webpage for enhancing browsing experience by allowing users to efficiently jump from one chart to another.
 
 ![Fig. 1](./static/images/plotlydeploy_webpage.png 'Fig. 1 Belly Button Biodiversity homepage')\
 **Fig. 1 Belly Button Biodiversity homepage**
